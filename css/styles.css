@@ -84,6 +84,14 @@ p, a {
 	font-weight: 700;
 }
 
+.skills p {
+	display: inline-block;
+	height: 30px;
+	width: 75%;
+	background-color: #3abaa0;
+	color: #fff;
+}
+
 /* portfolio section css */
 
 .portfolio-section {
