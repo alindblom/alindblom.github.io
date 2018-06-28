@@ -1,11 +1,10 @@
 body {
-	position: relative
-	padding-top: 70px;
+	position: relative;
 	background-color: #D9D9FF;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
@@ -13,13 +12,27 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a {
 	font-family: 'Roboto', sans-serif;
+	color: #111130;
+}
+
+.section-title {
+	font-size: 40px;
+	padding-top: 20px;
+	padding-bottom: 25px;
 }
 
 .about-section, .portfolio-section, .contact-section {
 	min-height: 460px;
-	padding-top: 45px;
+	padding-top: 10px;
 	padding-bottom: 45px;
 }
+
+@media only screen and (max-width : 768px) {
+  .hero-section, .about-section, .portfolio-section, .contact-section {
+		background-position: center;
+	}
+}
+
 /** navbar css **/
 
 .navbar-default {
@@ -27,14 +40,14 @@ p, a {
 }
 
 .nav.navbar-nav.navbar-right a {
-	color: #ebebeb;
+	color: #fff;
 	padding-right: 15px;
 	padding-left: 15px;
 }
 
 .nav.navbar-nav.navbar-right a:hover {
-	background-color: #3abaa0;
-	color: #ebebeb;
+	background-color: #08a686;
+	color: #fff;
 }
 
 
@@ -42,17 +55,23 @@ p, a {
 
 .hero-section {
 	height: 90vh;
-	background: linear-gradient(to top right, #111130, #0C1438);
+	background-image: url(../img/hero-img1.png);
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
  }
 
 .hero-container h1 {
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 700;
 }
 
-.hero-container h1, .hero-container h4 {
+.hero-container p {
+	font-size: 20px;
+}
+
+.hero-container h1, .hero-container p {
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
 }
@@ -72,12 +91,36 @@ p, a {
 /** about section css **/
 .about-section {
 	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: #D9D9FF;
+	margin-bottom: 0;
+	background-image: url(../img/about-img1.png);
+	background-size: cover;
+}
+
+.about-text {
+	margin-top: 30px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #080808;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.about-icon {
+	border-bottom: 1px solid #111130;
+}
+
+@media only screen and (max-width: 768px) {
+	.about-text {
+		margin-top: 25px;
+		text-shadow: 1px 1px 1px #080808;
+	}
+
+	.about-icon {
+		width: 250px;
+	}
 }
 
 .skills-container {
-	margin-top: 100px;
+	margin-top: 75px;
 }
 
 .about-section h2 {
@@ -87,15 +130,47 @@ p, a {
 .skills p {
 	display: inline-block;
 	height: 30px;
-	width: 75%;
-	background-color: #3abaa0;
+	width: 62%;
+	background-color: #08a686;
 	color: #fff;
+	font-size: 20px;
+}
+
+.skills p:hover {
+	width: 75%;
+	transition: width 2s;
+	background-color: #0fe8e1;
 }
 
 /* portfolio section css */
 
 .portfolio-section {
-	background-color: #0FE8D4;
+	background-image: url(../img/portfolio-img1.png);
+	background-size: cover;
+}
+
+.portfolio-text {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.portfolio-text p {
+	color: #fff;
+	text-shadow: 1px 1px 1px #080808;
+	font-size: 18px;
+}
+
+.portfolio-text a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.portfolio-text a:hover {
+	background-color: #08a686;
+	border: none;
+	color: #fff;
+	font-weight: 500;
 }
 
 .sm-web-portfolio-link {
@@ -106,9 +181,13 @@ p, a {
 	background-image: url(../img/restaurant-demo2.png);
 	background-size: cover;
 	background-position: center;
-	color: #fff;
+	color: #ebebeb;
 	height: 200px;
 	width: 330px;
+}
+
+.web-portfolio-text, .portfolio-img {
+	padding-bottom: 20px;
 }
 
 .web-portfolio-text {
@@ -126,63 +205,33 @@ p, a {
 	}
 }
 
-/* xs/sm art tiles css */
-
-.sm-art-tile1 {
-	background-image: url("../img/lightning-card1.png");
-	background-position: center;
-	background-size: auto;
-	height: 200px;
-	width: 330px;
-}
-
-.sm-art-tile2 {
-	background-image: url("../img/lightning-card1.png");
-	background-position: center;
-	background-size: auto;
-	height: 200px;
-	width: 330px;
-}
-
-@media only screen and (max-width : 768px) {
-  .sm-art-tile1, .sm-art-tile2 {
-		height: 200px;
-		width: 215px;
-		margin-left: 10px;
-	}
-}
-
-/* md screen media query */
-
-.md-art-tile1 {
-	background-image: url("../img/lightning-card1.png");
-	background-position: center;
-	background-size: auto;
-	height: 200px;
-	width: 330px;
-}
-
-.md-art-tile2 {
-	background-image: url("../img/lightning-card1.png");
-	background-position: center;
-	background-size: auto;
-	height: 200px;
-	width: 330px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-	.md-art-tile1, .md-art-tile2 {
-		height: 200px;
-		width: 315px;
-	}
-}
-
 /* contact section css */
-.contact-container {
-	position: relative;
+.contact-section {
+	background-image: url(../img/contact-img1.png);
+	background-size: cover;
+	font-size: 16px;
 }
 
 .fab {
 	font-size: 30px;
 	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.contact-section a {
+	color: #111130;
+}
+
+.contact-section a:hover {
+	color: #08a686;
+}
+
+.footer-contact-form {
+	font-family: 'Roboto', sans-serif;
+}
+
+.footer-contact-form .btn:hover {
+	background-color: #08a686;
+	border: none;
+	color: #fff;
 }
