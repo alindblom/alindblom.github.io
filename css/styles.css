@@ -97,21 +97,30 @@ p, a {
 }
 
 .about-text {
-	margin-top: 30px;
+	margin-top: 15px;
 	color: #fff;
 	text-shadow: 1px 1px 1px #080808;
 	padding: 10px;
 	font-size: 24px;
+	background-color: rgba(8, 166, 134, .4);
 }
 
 .about-icon {
+	margin-top: 10px;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
 	border-bottom: 1px solid #111130;
+	box-shadow: 2px 3px 2px #111130;
+}
+
+.about-section h2 {
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
 	.about-text {
 		margin-top: 25px;
-		text-shadow: 1px 1px 1px #080808;
+		text-shadow: 1px 1px 2px #080808;
 	}
 
 	.about-icon {
@@ -120,24 +129,21 @@ p, a {
 }
 
 .skills-container {
-	margin-top: 75px;
-}
-
-.about-section h2 {
-	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .skills p {
 	display: inline-block;
 	height: 30px;
-	width: 62%;
+	width: 70%;
 	background-color: #08a686;
 	color: #fff;
 	font-size: 20px;
 }
 
 .skills p:hover {
-	width: 75%;
+	width: 80%;
 	transition: width 2s;
 	background-color: #0fe8e1;
 }
@@ -150,8 +156,7 @@ p, a {
 }
 
 .portfolio-text {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 }
 
 .portfolio-text p {
@@ -173,39 +178,11 @@ p, a {
 	font-weight: 500;
 }
 
-.sm-web-portfolio-link {
-	margin-top: 60px;
-}
-
-.portfolio-tile-1 {
-	background-image: url(../img/restaurant-demo2.png);
-	background-size: cover;
-	background-position: center;
-	color: #ebebeb;
-	height: 200px;
-	width: 330px;
-}
-
-.web-portfolio-text, .portfolio-img {
+.portfolio-img {
 	padding-bottom: 20px;
 }
 
-.web-portfolio-text {
-	padding-top: 30px;
-}
-
-.web-portfolio-text:nth-child(even) {
-	padding-left: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-	.web-portfolio-text {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-}
-
-/* contact section css */
+/** contact section css **/
 .contact-section {
 	background-image: url(../img/contact-img1.png);
 	background-size: cover;
