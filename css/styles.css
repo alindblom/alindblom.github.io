@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, a {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #111130;
 }
 
@@ -37,6 +37,7 @@ p, a {
 
 .navbar-default {
 	background-color: rgba(0, 0, 0, .5);
+	border: 0;
 }
 
 .nav.navbar-nav.navbar-right a {
@@ -159,6 +160,10 @@ p, a {
 	padding-bottom: 30px;
 }
 
+.portfolio-section h3 {
+	font-size: 25px;
+}
+
 .portfolio-text p {
 	color: #fff;
 	text-shadow: 1px 1px 1px #080808;
@@ -166,7 +171,7 @@ p, a {
 }
 
 .portfolio-text a {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 }
@@ -204,7 +209,7 @@ p, a {
 }
 
 .footer-contact-form {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footer-contact-form .btn:hover {
