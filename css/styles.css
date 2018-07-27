@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	background-color: #D9D9FF;
+	background-color: #79e8e4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +47,7 @@ p, a {
 }
 
 .nav.navbar-nav.navbar-right a:hover {
-	background-color: #08a686;
+	background-color: #79e8e4;
 	color: #fff;
 }
 
@@ -79,7 +79,7 @@ p, a {
 
 @media only screen and (min-width : 992px) {
   .hero-section {
-    min-height: 500px;
+    height: 100vh;
   }
 }
 
@@ -91,9 +91,9 @@ p, a {
 
 /** about section css **/
 .about-section {
-	margin-top: 20px;
+	margin-top: 0;
 	margin-bottom: 0;
-	background-image: url(../img/about-img1.png);
+	background-image: url(../img/portfolio-img1.png);
 	background-size: cover;
 }
 
@@ -146,13 +146,13 @@ p, a {
 .skills p:hover {
 	width: 80%;
 	transition: width 2s;
-	background-color: #0fe8e1;
+	background-color: #111130;
 }
 
 /* portfolio section css */
 
 .portfolio-section {
-	background-image: url(../img/portfolio-img1.png);
+	background-image: url(../img/about-img1.png);
 	background-size: cover;
 }
 
@@ -177,7 +177,7 @@ p, a {
 }
 
 .portfolio-text a:hover {
-	background-color: #08a686;
+	background-color: #79e8e4;
 	border: none;
 	color: #fff;
 	font-weight: 500;
@@ -189,7 +189,7 @@ p, a {
 
 /** contact section css **/
 .contact-section {
-	background-image: url(../img/contact-img1.png);
+	background-image: url(../img/portfolio-img1.png);
 	background-size: cover;
 	font-size: 16px;
 }
@@ -213,7 +213,7 @@ p, a {
 }
 
 .footer-contact-form .btn:hover {
-	background-color: #08a686;
+	background-color: #111130;
 	border: none;
 	color: #fff;
 }
